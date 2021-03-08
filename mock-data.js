@@ -225,6 +225,187 @@ let mock = [{
     submitted: false,
     grade: 0
   },
+  //Homework
+  {
+    id: 26,
+    name: "HW 1",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 3",
+    submitted: true,
+    grade: 7
+  },
+  {
+    id: 27,
+    name: "HW 2",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 5",
+    submitted: true,
+    grade: 8
+  },
+  {
+    id: 28,
+    name: "HW 3",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 5",
+    submitted: true,
+    grade: 10
+  },
+  {
+    id: 29,
+    name: "HW 4",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 7",
+    submitted: true,
+    grade: 2
+  },
+  {
+    id: 30,
+    name: "HW 5",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 10",
+    submitted: true,
+    grade: 8
+  },
+  {
+    id: 31,
+    name: "HW 6",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 15",
+    submitted: true,
+    grade: 10
+  },
+  {
+    id: 32,
+    name: "HW 7",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 18",
+    submitted: true,
+    grade: 9
+  },
+  {
+    id: 33,
+    name: "HW 8",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 20",
+    submitted: true,
+    grade: 10
+  },
+  {
+    id: 34,
+    name: "HW 9",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 22",
+    submitted: true,
+    grade: 6
+  },
+  {
+    id: 35,
+    name: "HW 10",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 25",
+    submitted: true,
+    grade: 7
+  },
+  {
+    id: 36,
+    name: "HW 11",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 26",
+    submitted: true,
+    grade: 5
+  },
+  {
+    id: 37,
+    name: "HW 12",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "april 28",
+    submitted: true,
+    grade: 9
+  },
+  {
+    id: 38,
+    name: "HW 13",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "May 1",
+    submitted: true,
+    grade: 9
+  },
+  {
+    id: 39,
+    name: "HW 14",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "May 3",
+    submitted: true,
+    grade: 8
+  },
+  {
+    id: 40,
+    name: "HW 15",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "May 5",
+    submitted: false,
+    grade: 0
+  },
+  {
+    id: 41,
+    name: "HW 16",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "May 7",
+    submitted: false,
+    grade: 0
+  },
+  {
+    id: 42,
+    name: "HW 17",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "May 10",
+    submitted: false,
+    grade: 0
+  },
+  {
+    id: 43,
+    name: "HW 18",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "May 12",
+    submitted: false,
+    grade: 0
+  },
+  {
+    id: 44,
+    name: "HW 19",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "May 15",
+    submitted: false,
+    grade: 0
+  },
+  {
+    id: 45,
+    name: "HW 20",
+    description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
+    points: 10,
+    dueDate: "May 17",
+    submitted: false,
+    grade: 0
+  }
 ]
 
 export default mock;
