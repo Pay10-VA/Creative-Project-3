@@ -134,6 +134,97 @@ let mock = [{
     submitted: false,
     grade: 0
   },
+  //Quizzes section
+  {
+    id: 16,
+    name: "Quiz 1",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "April 1",
+    submitted: true,
+    grade: 49
+  },
+  {
+    id: 17,
+    name: "Quiz 2",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "April 10",
+    submitted: true,
+    grade: 17
+  },
+  {
+    id: 18,
+    name: "Quiz 3",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "April 15",
+    submitted: true,
+    grade: 30
+  },
+  {
+    id: 19,
+    name: "Quiz 4",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "April 29",
+    submitted: true,
+    grade: 50
+  },
+  {
+    id: 20,
+    name: "Quiz 5",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "May 1",
+    submitted: true,
+    grade: 45
+  },
+  {
+    id: 21,
+    name: "Quiz 6",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "May 5",
+    submitted: false,
+    grade: 0
+  },
+  {
+    id: 22,
+    name: "Quiz 7",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "May 10",
+    submitted: false,
+    grade: 0
+  },
+  {
+    id: 23,
+    name: "Quiz 8",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "May 15",
+    submitted: false,
+    grade: 0
+  },
+  {
+    id: 24,
+    name: "Quiz 9 ",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "May 20",
+    submitted: false,
+    grade: 0
+  },
+  {
+    id: 25,
+    name: "Quiz 10",
+    description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
+    points: 50,
+    dueDate: "May 30",
+    submitted: false,
+    grade: 0
+  },
 ]
 
 export default mock;
