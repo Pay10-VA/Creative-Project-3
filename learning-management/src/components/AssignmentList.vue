@@ -11,8 +11,8 @@
           <br>
         </div>
         <div id="right-side">
-          <button v-if="assignment.submitted">Unsubmit</button>
-          <button v-else >Submit</button>
+          <button v-if="assignment.submitted" @click="submission(assignment)">Unsubmit</button>
+          <button v-else @click="submission(assignment)" >Submit</button>
           <h2>Due {{assignment.dueDate}}</h2>
         </div>
       </div>
@@ -25,6 +25,16 @@ export default {
   name: 'AssignmentList',
   props: {
     assignments: Array
+  },
+  methods: {
+    submission(work) {
+      if(work.submitted == true) {
+        work.submitted = false;
+      }
+      else {
+        work.submitted = true;
+      }
+    }
   }
 }
 </script>
