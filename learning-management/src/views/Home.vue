@@ -16,3 +16,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.home {
+  min-height: calc(100vh - 61px - 57px); /*Style that keeps footer at bottom of page*/
+}
+</style>
