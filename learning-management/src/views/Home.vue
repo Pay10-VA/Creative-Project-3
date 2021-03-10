@@ -25,3 +25,10 @@ export default {
   },
 }
 </script>
+
+<style>
+  h1 {
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+</style>
