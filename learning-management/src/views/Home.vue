@@ -1,24 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Assignments</h1>
+
+    <AssignmentList :assignments="assignments" />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
+<script>
+import AssignmentList from "../components/AssignmentList.vue"
 export default {
   name: 'Home',
   components: {
-    HelloWorld
-  }
+    AssignmentList
+  },
+  data() {
+    return {
+    }
+  },
+  computed: {
+    assignments() {
+      return this.$root.$data.assignments;
+    }
+  },
 }
 </script>
-
-<style>
-.home {
-  min-height: calc(100vh - 61px - 57px); /*Style that keeps footer at bottom of page*/
-}
-</style>
