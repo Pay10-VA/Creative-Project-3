@@ -37,6 +37,7 @@
   display: inline-flex;
   background-color: #325A7F;
   width: 100%;
+  height: 120px;
 }
 
 #header-left {
