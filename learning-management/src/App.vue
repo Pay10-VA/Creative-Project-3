@@ -2,11 +2,11 @@
   <div id="app">
     <div id="header">
       <div id="header-left">
-        <router-link to="/"><h1>Smart Class</h1></router-link>
+        <router-link to="/"><h1>CS 333 Advanced Programming</h1></router-link>
       </div>
       <div id="nav">
-        <router-link to="/">Home</router-link> | 
-        <router-link to="/about">About</router-link>
+        <router-link to="/">Assignments</router-link> |
+        <router-link to="/about">Grades</router-link>
       </div>
     </div>
     <router-view/>
