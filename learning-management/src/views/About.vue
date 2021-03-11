@@ -16,7 +16,17 @@
     </div>
 
 
-<GradesList :assignments="grades" />
+    <GradesList :assignments="grades" />
+
+    <div id="total">
+    <div>
+      <h1>TOTAL GRADE: </h1>
+    </div>
+    <div>
+      <h2>{{letterGrade(totalGrade)}} = {{totalGrade}}% </h2>
+    </div>
+
+    </div>
 
 
   </div>
@@ -32,6 +42,7 @@ export default {
   data() {
     return {
       viewNum: 1,
+
     }
   },
   computed: {
@@ -45,13 +56,41 @@ export default {
       else {
       return this.$root.$data.assignments.filter(work => work.submitted == true);
       }
-    }
+    },
+    totalGrade() {
+      let total = 0;
+      let earned = 0;
+      let array = this.$root.$data.assignments.filter(work => work.grade != 0);
+      for(let i = 0; i < array.length; i++) {
+        total += array[i].points;
+        earned += array[i].grade;
+      }
+      let answer = earned / total;
+      return Math.round(answer  * 1000) / 10;
+    },
   },
   methods: {
     changeView(newView) {
       this.$root.$data.view = newView;
       this.viewNum = newView;
     },
+    letterGrade(grade) {
+      if(grade < 50) {
+        return "F";
+      }
+      else if(grade >= 60 && grade <= 69) {
+        return "D";
+      }
+      else if(grade >=70 && grade <= 79) {
+        return "C";
+      }
+      else if(grade >=80 && grade <= 89) {
+        return "B";
+      }
+      else {
+        return "A";
+      }
+    }
   },
 }
 </script>
@@ -78,6 +117,16 @@ button {
   width: 80%;
   height: 30px;
   margin-top: 15px;
+}
+
+#total {
+  border: solid #325A7F;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 
