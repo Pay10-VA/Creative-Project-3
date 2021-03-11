@@ -61,6 +61,7 @@ export default {
   border-left: 0px;
   border-right: 0px;
   border-bottom: 0px;
+  border-width: thin;
 }
 
 #assignment #right-side {

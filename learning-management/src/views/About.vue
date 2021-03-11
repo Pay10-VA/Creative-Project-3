@@ -5,10 +5,10 @@
     </div>
 
     <div id="filter">
-      <div>
+      <div id="text">
         <h2>Filter By: </h2>
       </div>
-      <div>
+      <div id="button-div">
         <button @click="changeView(1)">All</button>
         <button @click="changeView(2)">Graded</button>
         <button @click="changeView(3)">Submitted</button>
@@ -19,11 +19,15 @@
     <GradesList :assignments="grades" />
 
     <div id="total">
-    <div>
+    <div id="text-grade">
       <h1>TOTAL GRADE: </h1>
     </div>
-    <div>
-      <h2>{{letterGrade(totalGrade)}} = {{totalGrade}}% </h2>
+    <div id="grade-text">
+      <h1>{{totalGrade}}% </h1>
+
+    </div>
+    <div id="grade-text-right">
+      <h1>{{letterGrade(totalGrade)}}</h1>
     </div>
 
     </div>
@@ -125,8 +129,56 @@ button {
   border-right: 0px;
   border-bottom: 0px;
   text-align: left;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .about {
+      width: 75%;
+    }
+
+    button {
+      height: 50px;
+      width: 33%;
+    }
+
+    #filter {
+      display: block-flex;
+    }
+
+    #button-div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #total {
+      display: flex;
+    }
+
+    #text-grade {
+      width: 50%;
+    }
+
+    #grade-text {
+      width: 50%;
+      display: flex;
+    }
+
+    #grade-text h2 {
+      width: 50%;
+    }
+
+    #grade-text-right {
+
+    }
+
+    button:hover {
+      color: white;
+      background-color: #325A7F;
+    }
+
 }
 
 

@@ -6,12 +6,14 @@
       <h1 v-if="this.$root.$data.view == 2">Graded Assignments</h1>
       <h1 v-if="this.$root.$data.view == 3">Submitted Assignments</h1>
       <div v-for="assignment in assignments" :key="assignment.id" id="grade">
-        <div>
+        <div id="grade-left">
           <h1>{{assignment.name}}</h1>
+        </div>
+        <div id="grade-center">
           <h3 v-if="assignment.submitted" id="submitted">Submitted</h3>
           <h3 v-else id="notSubmitted">Not Submitted</h3>
         </div>
-        <div>
+        <div id="grade-right">
         <h3>{{assignment.grade}} / {{assignment.points}}</h3>
         <h3 v-if="assignment.grade != 0">{{letterGrade(assignment.grade, assignment.points)}}</h3>
         <h3 v-else>Not Yet Graded</h3>
@@ -81,12 +83,30 @@ export default {
 
 #grade {
   border: solid #325A7F;
+  border-width: thin;
   border-right: 0px;
   border-left: 0px;
   border-bottom: 0px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 10px;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  #grade {
+    display: flex;
+  }
+
+  #grade-left {
+    width: 50%;
+    text-align: left;
+  }
+
+  #grade-right {
+    width: 50%;
+    text-align: right;
+  }
 }
 
 
