@@ -1,17 +1,6 @@
 <template>
   <div id="main-content">
 
-  <div id="filter">
-    <div>
-      <h2>Filter By: </h2>
-    </div>
-    <div>
-      <button @click="changeView(1)">All</button>
-      <button @click="changeView(2)">Graded</button>
-      <button @click="changeView(3)">Submitted</button>
-    </div>
-  </div>
-
     <div id="grades-list">
       <h1 v-if="this.$root.$data.view == 1">All Assignments</h1>
       <h1 v-if="this.$root.$data.view == 2">Graded Assignments</h1>
@@ -46,9 +35,6 @@ export default {
         work.submitted = true;
       }
     },
-    changeView(newView) {
-      this.$root.$data.view = newView;
-    }
   }
 }
 </script>
@@ -82,15 +68,6 @@ export default {
   margin-bottom: 10px;
 }
 
-#filter {
-  margin-top: 30px;
-}
-
-button {
-  width: 80%;
-  height: 30px;
-  margin-top: 15px;
-}
 
 
 </style>
