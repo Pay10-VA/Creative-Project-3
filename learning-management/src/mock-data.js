@@ -23,7 +23,7 @@ let mock = [{
     points: 100,
     dueDate: 'April 20',
     submitted: true,
-    grade: 70
+    grade: 0
   },
   {
     id: 4,
@@ -77,7 +77,7 @@ let mock = [{
     description: "This is the fourth lab of the course. Labs test what you learned in class. Review Class Material.",
     points: 50,
     dueDate: "May 1",
-    submitted: false,
+    submitted: true,
     grade: 0
   },
   {
@@ -86,7 +86,7 @@ let mock = [{
     description: "This is the fifth lab of the course. Labs test what you learned in class. Review Class Material.",
     points: 50,
     dueDate: "May 6",
-    submitted: false,
+    submitted: true,
     grade: 0
   },
   {
@@ -169,7 +169,7 @@ let mock = [{
     points: 50,
     dueDate: "April 29",
     submitted: true,
-    grade: 50
+    grade: 0
   },
   {
     id: 20,
@@ -178,7 +178,7 @@ let mock = [{
     points: 50,
     dueDate: "May 1",
     submitted: true,
-    grade: 45
+    grade: 0
   },
   {
     id: 21,
@@ -186,7 +186,7 @@ let mock = [{
     description: "This is a summative assesment. This will test whay you learned thus far in class. Please study class material before taking the quiz.",
     points: 50,
     dueDate: "May 5",
-    submitted: false,
+    submitted: true,
     grade: 0
   },
   {
@@ -305,7 +305,7 @@ let mock = [{
     points: 10,
     dueDate: "april 22",
     submitted: true,
-    grade: 6
+    grade: 0
   },
   {
     id: 35,
@@ -341,7 +341,7 @@ let mock = [{
     points: 10,
     dueDate: "May 1",
     submitted: true,
-    grade: 9
+    grade: 0
   },
   {
     id: 39,
@@ -350,7 +350,7 @@ let mock = [{
     points: 10,
     dueDate: "May 3",
     submitted: true,
-    grade: 8
+    grade: 0
   },
   {
     id: 40,
@@ -358,7 +358,7 @@ let mock = [{
     description: "Homework is due after every class. No late work is accepted. The homeworks cover everything we learned in class that day. Make sure to turn HW in on time.",
     points: 10,
     dueDate: "May 5",
-    submitted: false,
+    submitted: true,
     grade: 0
   },
   {
