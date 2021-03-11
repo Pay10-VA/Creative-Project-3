@@ -7,7 +7,8 @@ Vue.config.productionTip = false
 
 let data = {
   assignments: mock,
-  cart: []
+  cart: [],
+  view: 1
 }
 
 

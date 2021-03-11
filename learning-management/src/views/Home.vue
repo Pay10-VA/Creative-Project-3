@@ -31,4 +31,6 @@ export default {
     margin-top: 20px;
     font-family: 'Raleway', sans-serif;
   }
+
+
 </style>
