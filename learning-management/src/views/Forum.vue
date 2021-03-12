@@ -3,13 +3,13 @@
 
     <h1>Class Chat</h1>
 
-    <p>Get help from classmates, TA's, and the course instructor. Post your questions or converse with your fellow classmates</p>
+    <p>Get help from classmates, TA's, and the course instructor. Post your questions or converse with your fellow classmates.</p>
 
     <div id="post-header">
       <h3>150 Participants</h3>
     </div>
     <div id="posts">
-      <div v-for="post in this.$root.$data.posts" :key="post.name" id="single-post">
+      <div v-for="post in this.$root.$data.posts" :key="post.message" id="single-post">
         <div id="post-name">
           <h3>{{post.name}}</h3>
         </div>
@@ -20,8 +20,8 @@
     </div>
 
     <div id="user-posting">
-      <input>
-      <button><i class="far fa-paper-plane"></i></button>
+      <input v-model="addedMessage">
+      <button type="submit" @click="addPost()"><i class="far fa-paper-plane"></i></button>
     </div>
 
   </div>
@@ -32,6 +32,21 @@ export default {
   name: 'Forum',
   components: {
   },
+  data() {
+    return {
+      addedMessage: "",
+    }
+  },
+  methods: {
+    addPost() {
+      let userName = "Me";
+      this.$root.$data.posts.push({
+        name: userName,
+        message: this.addedMessage
+      });
+      this.addedMessage = ""; //Clears addedMessage
+    }
+  }
 }
 </script>
 
@@ -44,12 +59,19 @@ export default {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    border: solid;
+    border-width: thin;
+    margin-bottom: 20px;
   }
 
   #single-post {
     border: solid;
     border-width: thin;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #post-name {
@@ -72,7 +94,7 @@ export default {
     padding-bottom: 5px;
     border: solid;
     border-width: thin;
-    background-color: #f2f2f2;
+    background-color: #c7c2c2;
     margin-top: 20px;
     text-align: left;
   }
@@ -82,15 +104,16 @@ export default {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
   }
 
   input {
-    width: 85%;
+    width: 90%;
     height: 30px;
   }
 
   button {
-    width: 15%;
+    width: 10%;
     height: 35px;
   }
 
