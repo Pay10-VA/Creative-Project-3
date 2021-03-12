@@ -15,7 +15,9 @@
         </div>
         <div id="right-side">
           <h2>Due {{assignment.dueDate}}</h2>
-          <button v-if="assignment.submitted" @click="submission(assignment)">Unsubmit</button>
+          <button v-if="assignment.submitted && assignment.grade == 0" @click="submission(assignment)">Unsubmit</button>
+          <!--<button v-else-if="assignment.grade != 0">Graded</button>-->
+          <div v-else-if="assignment.grade != 0"><h2 id="graded-h2">Graded</h2></div>
           <button v-else @click="submission(assignment)" >Submit</button>
         </div>
       </div>
@@ -105,6 +107,10 @@ button {
 
   button {
     margin-top: 20px;
+  }
+
+  #graded-h2 {
+    color: green;
   }
 
 }
