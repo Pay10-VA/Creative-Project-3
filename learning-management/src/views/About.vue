@@ -141,7 +141,7 @@ button {
 
     button {
       height: 50px;
-      width: 33%;
+      width: 100%;
     }
 
     #filter {
@@ -150,7 +150,9 @@ button {
 
     #button-div {
       display: flex;
-      justify-content: space-between;
+      /*justify-content: space-between;*/
+      margin-left: auto;
+      margin-right: auto;
     }
 
     #total {
