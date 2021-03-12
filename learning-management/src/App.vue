@@ -6,7 +6,8 @@
       </div>
       <div id="nav">
         <router-link to="/">Assignments</router-link> |
-        <router-link to="/about">Grades</router-link>
+        <router-link to="/about">Grades</router-link> |
+        <router-link to="/Forum">Q&A</router-link> 
       </div>
     </div>
     <router-view/>
