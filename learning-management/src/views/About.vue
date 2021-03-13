@@ -148,13 +148,6 @@ button {
       display: block-flex;
     }
 
-    #button-div {
-      display: flex;
-      /*justify-content: space-between;*/
-      margin-left: auto;
-      margin-right: auto;
-    }
-
     #total {
       display: flex;
     }
@@ -172,14 +165,7 @@ button {
       width: 50%;
     }
 
-    #grade-text-right {
 
-    }
-
-    button:hover {
-      color: white;
-      background-color: #325A7F;
-    }
 
 }
 
